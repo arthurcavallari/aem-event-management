@@ -1,0 +1,7 @@
+{
+    "scripts": [
+        "create path (sling:OrderedFolder) /content/dam/event-management-challenge",
+        "create path (nt:unstructured) /content/dam/event-management-challenge/jcr:content",
+        "set properties on /content/dam/event-management-challenge/jcr:content\n  set cq:conf{String} to /conf/event-management-challenge\n  set jcr:title{String} to \"Event Management Challenge\"\nend"
+    ]
+}
