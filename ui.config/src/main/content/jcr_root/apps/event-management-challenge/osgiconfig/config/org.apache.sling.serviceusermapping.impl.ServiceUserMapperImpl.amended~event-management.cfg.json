@@ -1,0 +1,5 @@
+{
+  "user.mapping":[
+    "event-management-challenge.core:event-creation-service=[event-creation-service]"
+  ]
+}
