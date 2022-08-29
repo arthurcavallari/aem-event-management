@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <workspaceFilter version="1.0">
+    <filter root="/apps/event-management-challenge/acls"/>
     <filter root="/apps/event-management-challenge/clientlibs"/>
     <filter root="/apps/event-management-challenge/components"/>
     <filter root="/apps/event-management-challenge/i18n"/>
+    <filter root="/apps/sling/servlet/errorhandler"/>
 </workspaceFilter>

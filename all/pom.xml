@@ -54,6 +54,31 @@
                     <!-- skip sub package validation for now as some vendor packages like CIF apps will not pass -->
                     <skipSubPackageValidation>true</skipSubPackageValidation>
                     <embeddeds>
+                        <!-- ACS Commons -->
+                        <embedded>
+                            <groupId>com.adobe.acs</groupId>
+                            <artifactId>acs-aem-commons-content</artifactId>
+                            <type>zip</type>
+                            <target>/apps/event-management-challenge-vendor-packages/application/install</target>
+                            <filter>true</filter>
+                            <isAllVersionsFilter>true</isAllVersionsFilter>
+                        </embedded>
+
+                        <!-- Netcentric -->
+                        <embedded>
+                            <groupId>biz.netcentric.cq.tools.accesscontroltool</groupId>
+                            <artifactId>accesscontroltool-package</artifactId>
+                            <type>content-package</type>
+                            <classifier>cloud</classifier>
+                            <target>/apps/event-management-challenge-vendor-packages/application/install</target>
+                        </embedded>
+                        <embedded>
+                            <groupId>biz.netcentric.cq.tools.accesscontroltool</groupId>
+                            <artifactId>accesscontroltool-oakindex-package</artifactId>
+                            <type>zip</type>
+                            <target>/apps/event-management-challenge-vendor-packages/application/install</target>
+                        </embedded>
+
                         <embedded>
                             <groupId>com.arthurcavallari</groupId>
                             <artifactId>event-management-challenge.ui.apps</artifactId>
@@ -197,5 +222,26 @@
             <type>zip</type>
         </dependency>
 
+        <!-- ACS Commons -->
+        <dependency>
+            <groupId>com.adobe.acs</groupId>
+            <artifactId>acs-aem-commons-content</artifactId>
+            <type>zip</type>
+        </dependency>
+
+        <!-- Netcentric ACL Tool -->
+        <dependency>
+            <groupId>biz.netcentric.cq.tools.accesscontroltool</groupId>
+            <artifactId>accesscontroltool-package</artifactId>
+            <type>content-package</type>
+            <classifier>cloud</classifier>
+        </dependency>
+        <!-- Oak Index for Netcentric ACL Tool -->
+        <dependency>
+            <groupId>biz.netcentric.cq.tools.accesscontroltool</groupId>
+            <artifactId>accesscontroltool-oakindex-package</artifactId>
+            <type>zip</type>
+            <classifier>cloud</classifier>
+        </dependency>
     </dependencies>
 </project>

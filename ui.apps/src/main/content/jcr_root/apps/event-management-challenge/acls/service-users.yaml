@@ -1,0 +1,23 @@
+# Service users
+
+- user_config:
+
+    - acl-event-creation-service:
+
+        - name:
+          path: eventManagement
+          isSystemUser: true
+
+- ace_config:
+
+    - acl-event-creation-service:
+
+        - path: /content/event-management-challenge
+          permission: allow
+          actions: "read,modify,create,delete,replicate"
+          repGlob: "*"
+
+        - path: /conf/event-management-challenge
+          permission: allow
+          actions: "read"
+          repGlob: "*"
