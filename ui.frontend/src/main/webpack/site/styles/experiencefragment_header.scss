@@ -15,6 +15,9 @@ header.experiencefragment {
 
         @media (prefers-color-scheme: dark) {
             color: $color-foreground-dark;
+            &:visited {
+                color: $color-link-visited-dark;
+            }
         }
 
         &:hover,
@@ -33,6 +36,14 @@ header.experiencefragment {
     .cmp-container {
         display: grid;
         grid-template-columns: 4fr 1fr 1fr;
+
+        width: 100%;
+        margin: 0 auto;
+
+        @media (min-width: 1201px) {
+            width: 80%;
+            margin: 0 auto;
+        }
     }
 
     //== Navigation

@@ -1,0 +1,21 @@
+#event-registration-form .cmp-form-text {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  margin-bottom: 16px;
+
+  @media (min-width: 1201px) {
+    grid-template-columns: 1fr 3fr;
+  }
+}
+
+#event-registration-form .cmp-form-text input,#event-registration-form .cmp-form-text textarea {
+  max-width: 380px;
+
+  @media (min-width: 1201px) {
+    max-width: 480px;
+  }
+}
+
+.cmp-registration-form__error {
+  color: $color-alert;
+}
