@@ -2,14 +2,21 @@
 <jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
     jcr:primaryType="cq:Page">
     <jcr:content
-        pageTitle="Event Management Challenge"
-        jcr:primaryType="cq:PageContent"
-        jcr:title="en"
         cq:contextHubPath="/etc/cloudsettings/default/contexthub"
         cq:contextHubSegmentsPath="/etc/segmentation/contexthub"
+        cq:lastModified="{Date}2022-08-29T06:20:25.869+10:00"
+        cq:lastModifiedBy="admin"
         cq:template="/conf/event-management-challenge/settings/wcm/templates/page-content"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="Event Management Challenge | Home"
         sling:resourceType="event-management-challenge/components/page"
-    >
+        errorPages="/content/event-management-challenge/us/en/errors"
+        hideInNav="true"
+        navTitle="Home"
+        pageTitle="Event Management Challenge | Home"
+        pwaCachestrategy="staleWhileRevalidate"
+        pwaDisplay="standalone"
+        pwaOrientation="any">
         <root
             jcr:primaryType="nt:unstructured"
             sling:resourceType="event-management-challenge/components/container"
@@ -18,66 +25,207 @@
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="event-management-challenge/components/container">
                 <title
+                    jcr:lastModified="{Date}2022-08-29T05:10:08.464+10:00"
+                    jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
+                    jcr:title="Event Management CMS"
                     sling:resourceType="event-management-challenge/components/title"/>
                 <container
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="event-management-challenge/components/container"
                     layout="responsiveGrid">
                     <teaser
-                        jcr:description="&lt;p>Don't stop half way, go for the top!&lt;/p>&#xd;&#xa;"
+                        jcr:description="&lt;p>Checkout our latest events!&lt;/p>&#xd;&#xa;"
+                        jcr:lastModified="{Date}2022-08-29T05:18:33.899+10:00"
+                        jcr:lastModifiedBy="admin"
                         jcr:primaryType="nt:unstructured"
-                        jcr:title="Epic Journey"
+                        jcr:title="Upcoming events"
                         sling:resourceType="event-management-challenge/components/teaser"
                         actionsEnabled="false"
+                        altValueFromPageImage="true"
                         descriptionFromPage="false"
+                        imageFromPageImage="true"
+                        isDecorative="false"
+                        linkTarget="_self"
+                        linkURL="/content/event-management-challenge/us/en/events"
                         textIsRich="true"
                         titleFromPage="false">
                         <cq:responsive jcr:primaryType="nt:unstructured">
                             <default
                                 jcr:primaryType="nt:unstructured"
                                 offset="0"
+                                width="2"/>
+                            <tablet
+                                jcr:primaryType="nt:unstructured"
+                                offset="0"
                                 width="4"/>
+                            <phone
+                                jcr:primaryType="nt:unstructured"
+                                offset="0"
+                                width="12"/>
                         </cq:responsive>
                     </teaser>
-                    <teaser_copy
-                        jcr:description="&lt;p>Don't stop half way, go for the top!&lt;/p>&#xd;&#xa;"
+                    <container
+                        jcr:created="{Date}2022-08-29T05:53:00.040+10:00"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2022-08-29T05:59:05.937+10:00"
+                        jcr:lastModifiedBy="admin"
                         jcr:primaryType="nt:unstructured"
-                        jcr:title="Epic Journey"
-                        sling:resourceType="event-management-challenge/components/teaser"
-                        actionsEnabled="false"
-                        descriptionFromPage="false"
-                        textIsRich="true"
-                        titleFromPage="false">
+                        sling:resourceType="event-management-challenge/components/container"
+                        layout="responsiveGrid">
                         <cq:responsive jcr:primaryType="nt:unstructured">
                             <default
                                 jcr:primaryType="nt:unstructured"
-                                offset="0"
-                                width="4"/>
-                        </cq:responsive>
-                    </teaser_copy>
-                    <teaser_copy_1579324932
-                        jcr:description="&lt;p>Don't stop half way, go for the top!&lt;/p>&#xd;&#xa;"
-                        jcr:primaryType="nt:unstructured"
-                        jcr:title="Epic Journey"
-                        sling:resourceType="event-management-challenge/components/teaser"
-                        actionsEnabled="false"
-                        descriptionFromPage="false"
-                        textIsRich="true"
-                        titleFromPage="false">
-                        <cq:responsive jcr:primaryType="nt:unstructured">
-                            <default
+                                offset="1"
+                                width="9"/>
+                            <tablet
                                 jcr:primaryType="nt:unstructured"
+                                offset="1"
+                                width="7"/>
+                            <phone
+                                jcr:primaryType="nt:unstructured"
+                                behavior="newline"
                                 offset="0"
-                                width="4"/>
+                                width="12"/>
                         </cq:responsive>
-                    </teaser_copy_1579324932>
-                    <helloworld
-                        jcr:primaryType="nt:unstructured"
-                        sling:resourceType="event-management-challenge/components/helloworld"
-                        text="lalala :)"/>
+                        <image-desktop
+                            jcr:created="{Date}2022-08-29T05:59:30.209+10:00"
+                            jcr:createdBy="admin"
+                            jcr:lastModified="{Date}2022-08-29T06:04:04.222+10:00"
+                            jcr:lastModifiedBy="admin"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="event-management-challenge/components/image"
+                            alt="Event photo"
+                            altValueFromDAM="false"
+                            displayPopupTitle="false"
+                            fileReference="/content/dam/event-management-challenge/event-image-small.png"
+                            imageFromPageImage="false"
+                            isDecorative="false"
+                            linkTarget="_self"
+                            titleValueFromDAM="false">
+                            <cq:responsive jcr:primaryType="nt:unstructured">
+                                <default
+                                    jcr:primaryType="nt:unstructured"
+                                    behavior="newline"
+                                    offset="0"
+                                    width="3"/>
+                                <tablet
+                                    jcr:primaryType="nt:unstructured"
+                                    behavior="hide"/>
+                                <phone
+                                    jcr:primaryType="nt:unstructured"
+                                    behavior="hide"/>
+                            </cq:responsive>
+                        </image-desktop>
+                        <title
+                            jcr:created="{Date}2022-08-29T06:07:26.010+10:00"
+                            jcr:createdBy="admin"
+                            jcr:lastModified="{Date}2022-08-29T06:08:35.804+10:00"
+                            jcr:lastModifiedBy="admin"
+                            jcr:primaryType="nt:unstructured"
+                            jcr:title="Events"
+                            sling:resourceType="event-management-challenge/components/title"
+                            linkTarget="_self"
+                            type="h2">
+                            <cq:responsive jcr:primaryType="nt:unstructured">
+                                <default
+                                    jcr:primaryType="nt:unstructured"
+                                    offset="1"
+                                    width="5"/>
+                            </cq:responsive>
+                        </title>
+                        <text
+                            jcr:created="{Date}2022-08-29T05:20:40.294+10:00"
+                            jcr:createdBy="admin"
+                            jcr:lastModified="{Date}2022-08-29T05:57:32.825+10:00"
+                            jcr:lastModifiedBy="admin"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="event-management-challenge/components/text"
+                            text="&lt;p>Welcome to Events Management!&lt;/p>&#xd;&#xa;&lt;p>Check out our upcoming events or register a new event!&lt;/p>&#xd;&#xa;"
+                            textIsRich="true">
+                            <cq:responsive jcr:primaryType="nt:unstructured">
+                                <default
+                                    jcr:primaryType="nt:unstructured"
+                                    offset="1"
+                                    width="5"/>
+                                <phone
+                                    jcr:primaryType="nt:unstructured"
+                                    behavior="newline"
+                                    offset="0"
+                                    width="12"/>
+                            </cq:responsive>
+                        </text>
+                        <button
+                            jcr:created="{Date}2022-08-29T05:51:15.138+10:00"
+                            jcr:createdBy="admin"
+                            jcr:lastModified="{Date}2022-08-29T05:55:01.972+10:00"
+                            jcr:lastModifiedBy="admin"
+                            jcr:primaryType="nt:unstructured"
+                            jcr:title="Register a new event"
+                            sling:resourceType="event-management-challenge/components/button"
+                            accessibilityLabel="Register"
+                            linkTarget="_self"
+                            linkURL="/content/event-management-challenge/us/en/register">
+                            <cq:responsive jcr:primaryType="nt:unstructured">
+                                <default
+                                    jcr:primaryType="nt:unstructured"
+                                    offset="1"
+                                    width="2"/>
+                                <tablet
+                                    jcr:primaryType="nt:unstructured"
+                                    behavior="newline"
+                                    offset="1"
+                                    width="5"/>
+                                <phone
+                                    jcr:primaryType="nt:unstructured"
+                                    behavior="newline"
+                                    offset="0"
+                                    width="12"/>
+                            </cq:responsive>
+                        </button>
+                        <image
+                            jcr:created="{Date}2022-08-29T05:59:30.209+10:00"
+                            jcr:createdBy="admin"
+                            jcr:lastModified="{Date}2022-08-29T06:04:04.222+10:00"
+                            jcr:lastModifiedBy="admin"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="event-management-challenge/components/image"
+                            alt="Event photo"
+                            altValueFromDAM="false"
+                            displayPopupTitle="false"
+                            fileReference="/content/dam/event-management-challenge/event-image-small.png"
+                            imageFromPageImage="false"
+                            isDecorative="false"
+                            linkTarget="_self"
+                            titleValueFromDAM="false">
+                            <cq:responsive jcr:primaryType="nt:unstructured">
+                                <default
+                                    jcr:primaryType="nt:unstructured"
+                                    behavior="hide"/>
+                                <tablet
+                                    jcr:primaryType="nt:unstructured"
+                                    behavior="newline"
+                                    offset="1"
+                                    width="9"/>
+                                <phone
+                                    jcr:primaryType="nt:unstructured"
+                                    behavior="newline"
+                                    offset="0"
+                                    width="12"/>
+                            </cq:responsive>
+                        </image>
+                    </container>
                 </container>
             </container>
         </root>
+        <cq:featuredimage
+            jcr:lastModified="{Date}2022-08-29T05:09:26.350+10:00"
+            jcr:lastModifiedBy="admin"
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="core/wcm/components/image/v3/image"
+            altValueFromDAM="false"/>
     </jcr:content>
+    <events/>
+    <register/>
+    <errors/>
 </jcr:root>

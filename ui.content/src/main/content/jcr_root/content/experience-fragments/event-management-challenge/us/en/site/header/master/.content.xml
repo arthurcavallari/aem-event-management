@@ -19,7 +19,8 @@
                 collectAllPages="false"
                 navigationRoot="/content/event-management-challenge/us/en"
                 skipNavigationRoot="false"
-                structureDepth="1"/>
+                structureDepth="1"
+                structureStart="0"/>
             <languagenavigation
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="event-management-challenge/components/languagenavigation"

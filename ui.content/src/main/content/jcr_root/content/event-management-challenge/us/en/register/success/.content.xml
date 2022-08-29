@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:lastModified="{Date}2022-08-29T06:39:58.457+10:00"
+        cq:lastModifiedBy="admin"
+        cq:template="/conf/event-management-challenge/settings/wcm/templates/page-content"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="Event Management Challenge | Registration successful"
+        sling:resourceType="event-management-challenge/components/page"
+        hideInNav="true"
+        pageTitle="Event Management Challenge | Registration successful"
+        pwaCachestrategy="staleWhileRevalidate"
+        pwaDisplay="standalone"
+        pwaOrientation="any">
+        <root
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="event-management-challenge/components/container"
+            layout="responsiveGrid">
+            <container
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="event-management-challenge/components/container"
+                layout="responsiveGrid">
+                <title
+                    jcr:lastModified="{Date}2022-08-29T06:38:35.781+10:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    jcr:title="Registration successful!"
+                    sling:resourceType="event-management-challenge/components/title"/>
+                <container
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="event-management-challenge/components/container"
+                    layout="responsiveGrid">
+                    <text
+                        jcr:created="{Date}2022-08-29T06:38:40.364+10:00"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2022-08-29T06:39:58.454+10:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="event-management-challenge/components/text"
+                        text="&lt;p>Your event has been registered successfully. A team member will process your event and it will appear on the events listing page shortly.&lt;/p>&#xd;&#xa;"
+                        textIsRich="true"/>
+                </container>
+            </container>
+        </root>
+        <cq:featuredimage
+            jcr:lastModified="{Date}2022-08-29T06:38:08.425+10:00"
+            jcr:lastModifiedBy="admin"
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="core/wcm/components/image/v3/image"
+            altValueFromDAM="true"/>
+    </jcr:content>
+</jcr:root>

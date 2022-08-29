@@ -27,7 +27,7 @@
         <module>all</module>
         <module>core</module>
         <module>ui.frontend</module>
-         <module>ui.apps</module>
+        <module>ui.apps</module>
         <module>ui.apps.structure</module>
         <module>ui.config</module>
         <module>ui.content</module>
@@ -54,6 +54,9 @@
         <aem.sdk.api>2022.8.8316.20220818T100409Z-220700</aem.sdk.api>
         <aemanalyser.version>1.4.10</aemanalyser.version>
         <componentGroupName>Event Management Challenge</componentGroupName>
+
+        <acs.commons.version>5.3.4</acs.commons.version>
+        <netcentric.accesscontroltool.version>3.0.4</netcentric.accesscontroltool.version>
     </properties>
 
     <build>
@@ -533,7 +536,69 @@ Bundle-DocURL:
                 <artifactId>core.wcm.components.core</artifactId>
                 <version>${core.wcm.components.version}</version>
             </dependency>
+            <dependency>
+                <groupId>org.projectlombok</groupId>
+                <artifactId>lombok</artifactId>
+                <version>1.18.22</version>
+                <scope>provided</scope>
+            </dependency>
+            <dependency>
+                <groupId>org.jetbrains</groupId>
+                <artifactId>annotations</artifactId>
+                <version>22.0.0</version>
+            </dependency>
+            <dependency>
+                <groupId>com.google.code.gson</groupId>
+                <artifactId>gson</artifactId>
+                <version>2.8.9</version>
+            </dependency>
 
+            <!-- ACS Commons Content -->
+            <dependency>
+                <groupId>com.adobe.acs</groupId>
+                <artifactId>acs-aem-commons-ui.content</artifactId>
+                <version>${acs.commons.version}</version>
+                <type>zip</type>
+            </dependency>
+
+            <dependency>
+                <groupId>com.adobe.acs</groupId>
+                <artifactId>acs-aem-commons-content</artifactId>
+                <version>${acs.commons.version}</version>
+                <type>zip</type>
+            </dependency>
+
+            <!-- ACS Commons Apps -->
+            <dependency>
+                <groupId>com.adobe.acs</groupId>
+                <artifactId>acs-aem-commons-ui.apps</artifactId>
+                <version>${acs.commons.version}</version>
+                <type>zip</type>
+            </dependency>
+
+            <!-- ACS Commons Bundle -->
+            <dependency>
+                <groupId>com.adobe.acs</groupId>
+                <artifactId>acs-aem-commons-bundle</artifactId>
+                <version>${acs.commons.version}</version>
+            </dependency>
+
+            <!--Netcentric ACL Tool -->
+            <dependency>
+                <groupId>biz.netcentric.cq.tools.accesscontroltool</groupId>
+                <artifactId>accesscontroltool-package</artifactId>
+                <version>${netcentric.accesscontroltool.version}</version>
+                <type>content-package</type>
+                <classifier>cloud</classifier>
+            </dependency>
+            <!--Oak Index for netcentric ACL Tool -->
+            <dependency>
+                <groupId>biz.netcentric.cq.tools.accesscontroltool</groupId>
+                <artifactId>accesscontroltool-oakindex-package</artifactId>
+                <version>${netcentric.accesscontroltool.version}</version>
+                <type>zip</type>
+                <classifier>cloud</classifier>
+            </dependency>
 
             <!-- Testing -->
             <dependency>

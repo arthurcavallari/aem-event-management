@@ -21,6 +21,10 @@ a {
 
     @media (prefers-color-scheme: dark) {
         color: $color-link-dark;
+
+        &:visited {
+            color: $color-link-visited-dark;
+        }
     }
 }
 
@@ -30,4 +34,16 @@ optgroup,
 select,
 textarea {
     font: inherit;
+}
+
+input,
+button,
+textarea {
+  background-color: $color-background-secondary-dark;
+  color: $color-foreground-dark;
+}
+blockquote,
+pre {
+  background-color: $color-background-secondary-dark;
+  color: $color-foreground-dark;
 }

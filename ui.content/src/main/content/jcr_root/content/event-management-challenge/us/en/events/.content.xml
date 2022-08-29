@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:lastModified="{Date}2022-08-29T05:49:28.446+10:00"
+        cq:lastModifiedBy="admin"
+        cq:template="/conf/event-management-challenge/settings/wcm/templates/page-content"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="Events Listing"
+        sling:resourceType="event-management-challenge/components/page"
+        navTitle="Events Listing"
+        pageTitle="Events Listing"
+        pwaCachestrategy="staleWhileRevalidate"
+        pwaDisplay="standalone"
+        pwaOrientation="any">
+        <root
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="event-management-challenge/components/container"
+            layout="responsiveGrid">
+            <container
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="event-management-challenge/components/container"
+                layout="responsiveGrid">
+                <title
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="event-management-challenge/components/title"/>
+                <container
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="event-management-challenge/components/container"
+                    layout="responsiveGrid">
+                    <list
+                        jcr:created="{Date}2022-08-29T05:05:00.755+10:00"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2022-08-29T05:06:00.860+10:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="event-management-challenge/components/list"
+                        childDepth="1"
+                        displayItemAsTeaser="false"
+                        linkItems="true"
+                        listFrom="children"
+                        parentPage="/content/event-management-challenge/us/en/events"
+                        showDescription="false"
+                        showModificationDate="false"
+                        sortOrder="asc"
+                        tagsMatch="any"/>
+                </container>
+            </container>
+        </root>
+        <cq:featuredimage
+            jcr:lastModified="{Date}2022-08-29T05:49:28.435+10:00"
+            jcr:lastModifiedBy="admin"
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="core/wcm/components/image/v3/image"
+            alt="Upcoming events"
+            altValueFromDAM="false"
+            fileReference="/content/dam/event-management-challenge/upcoming-events-small.png"/>
+    </jcr:content>
+    <some-really-fun-event/>
+    <test/>
+    <_x0036_806178d-7136-4e8c-b9bd-f7767a89bb90/>
+</jcr:root>

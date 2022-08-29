@@ -1,0 +1,17 @@
+<sly data-sly-use.eventDetails="com.arthurcavallari.core.models.EventDetailsModel"
+     data-sly-use.templates="core/wcm/components/commons/v1/templates.html"
+     data-sly-test.isEmpty="${!eventDetails.eventId}" />
+
+<div data-sly-test="${!isEmpty}" class="cmp-event-details">
+
+    <h1 class="cmp-event-details__title">${eventDetails.eventName}</h1>
+
+    <div class="cmp-event-details__contact" data-sly-test="${eventDetails.organiserEmail}">
+        <p>Contact: <a href="mailto:${eventDetails.organiserEmail}">${eventDetails.organiserEmail}</a></p>
+    </div>
+
+    <div class="cmp-event-details__notes" data-sly-test="${eventDetails.eventNotes}">
+        ${eventDetails.eventNotes @ context = 'html'}
+    </div>
+</div>
+<sly data-sly-call="${templates.placeholder @ isEmpty = isEmpty, classAppend='cmp-event-details'}"></sly>

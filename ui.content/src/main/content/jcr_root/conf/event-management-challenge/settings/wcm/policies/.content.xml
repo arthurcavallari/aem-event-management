@@ -8,6 +8,7 @@
             <form jcr:primaryType="nt:unstructured">
                 <container jcr:primaryType="nt:unstructured">
                     <form-container
+                        cq:styleDefaultClasses="qfc-container"
                         jcr:description="Allows the form components to be dropped into this core form container."
                         jcr:primaryType="nt:unstructured"
                         jcr:title="Content Form"
@@ -339,6 +340,17 @@
                     <jcr:content jcr:primaryType="nt:unstructured"/>
                 </policy>
             </page>
+            <eventdetailspage jcr:primaryType="nt:unstructured">
+                <policy
+                    jcr:description="Includes the required client libraries."
+                    jcr:primaryType="nt:unstructured"
+                    jcr:title="Event Details Page"
+                    sling:resourceType="wcm/core/components/policy/policy"
+                    clientlibs="[event-management-challenge.dependencies,event-management-challenge.site]"
+                    clientlibsJsHead="event-management-challenge.dependencies">
+                    <jcr:content jcr:primaryType="nt:unstructured"/>
+                </policy>
+            </eventdetailspage>
         </components>
     </event-management-challenge>
 </jcr:root>

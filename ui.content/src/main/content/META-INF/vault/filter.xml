@@ -3,5 +3,7 @@
     <filter root="/conf/event-management-challenge" mode="merge"/>
     <filter root="/content/event-management-challenge" mode="merge"/>
     <filter root="/content/dam/event-management-challenge/asset.jpg" mode="merge"/>
+    <filter root="/content/dam/event-management-challenge/event-image-small.png" mode="merge"/>
+    <filter root="/content/dam/event-management-challenge/upcoming-events-small.png" mode="merge"/>
     <filter root="/content/experience-fragments/event-management-challenge" mode="merge"/>
 </workspaceFilter>
