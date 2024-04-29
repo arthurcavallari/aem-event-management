@@ -3,4 +3,14 @@
 
 main.container {
     padding: .5em 1em;
+
+    > .cmp-container {
+        width: 100%;
+        margin: 0 auto;
+
+        @media (min-width: 1201px) {
+            width: 80%;
+            margin: 0 auto;
+        }
+    }
 }

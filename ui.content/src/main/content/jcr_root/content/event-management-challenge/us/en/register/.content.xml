@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:lastModified="{Date}2022-08-29T15:40:08.934+10:00"
+        cq:lastModifiedBy="admin"
+        cq:template="/conf/event-management-challenge/settings/wcm/templates/page-content"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="Event Registration"
+        sling:resourceType="event-management-challenge/components/page">
+        <root
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="event-management-challenge/components/container"
+            layout="responsiveGrid">
+            <container
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="event-management-challenge/components/container"
+                layout="responsiveGrid">
+                <title
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="event-management-challenge/components/title"/>
+                <container
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="event-management-challenge/components/container"
+                    layout="responsiveGrid">
+                    <container
+                        jcr:created="{Date}2022-08-29T06:35:41.936+10:00"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2022-08-29T07:00:37.637+10:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="event-management-challenge/components/form/container"
+                        actionType="core/wcm/components/form/actions/rpc"
+                        errorMessage="An error occurred while registering your event, please try again later."
+                        externalServiceEndPointUrl="https://localhost:4502/bin/eventRegistration"
+                        id="event-registration-form"
+                        redirect="/content/event-management-challenge/us/en/register/success">
+                        <text
+                            jcr:created="{Date}2022-08-29T06:41:31.182+10:00"
+                            jcr:createdBy="admin"
+                            jcr:lastModified="{Date}2022-08-29T06:43:32.206+10:00"
+                            jcr:lastModifiedBy="admin"
+                            jcr:primaryType="nt:unstructured"
+                            jcr:title="Event name:"
+                            sling:resourceType="event-management-challenge/components/form/text"
+                            id="eventName"
+                            name="eventName"
+                            required="true"
+                            requiredMessage="Please enter an event name"
+                            rows="2"
+                            type="text"/>
+                        <text_1381751310
+                            jcr:created="{Date}2022-08-29T06:41:33.971+10:00"
+                            jcr:createdBy="admin"
+                            jcr:lastModified="{Date}2022-08-29T06:43:37.998+10:00"
+                            jcr:lastModifiedBy="admin"
+                            jcr:primaryType="nt:unstructured"
+                            jcr:title="Organiser's email address:"
+                            sling:resourceType="event-management-challenge/components/form/text"
+                            id="organiserEmail"
+                            name="organiserEmail"
+                            required="true"
+                            requiredMessage="Please enter a valid email address"
+                            rows="2"
+                            type="email"/>
+                        <text_1707521449
+                            jcr:created="{Date}2022-08-29T06:41:38.044+10:00"
+                            jcr:createdBy="admin"
+                            jcr:lastModified="{Date}2022-08-29T06:43:49.027+10:00"
+                            jcr:lastModifiedBy="admin"
+                            jcr:primaryType="nt:unstructured"
+                            jcr:title="Event notes:"
+                            sling:resourceType="event-management-challenge/components/form/text"
+                            id="eventNotes"
+                            name="eventNotes"
+                            rows="4"
+                            type="textarea"/>
+                        <button
+                            jcr:created="{Date}2022-08-29T06:41:42.193+10:00"
+                            jcr:createdBy="admin"
+                            jcr:lastModified="{Date}2022-08-29T15:40:08.929+10:00"
+                            jcr:lastModifiedBy="admin"
+                            jcr:primaryType="nt:unstructured"
+                            jcr:title="Register event"
+                            sling:resourceType="event-management-challenge/components/form/button"
+                            id="createEvent"
+                            name="createEvent"
+                            type="submit">
+                            <cq:responsive_ jcr:primaryType="nt:unstructured">
+                                <default
+                                    jcr:primaryType="nt:unstructured"
+                                    offset="0"
+                                    width="3"/>
+                            </cq:responsive_>
+                        </button>
+                        <cq:responsive_ jcr:primaryType="nt:unstructured">
+                            <default
+                                    jcr:primaryType="nt:unstructured"
+                                    offset="0"
+                                    width="5"/>
+                            <tablet
+                                    jcr:primaryType="nt:unstructured"
+                                    offset="0"
+                                    width="12"/>
+                            <phone
+                                    jcr:primaryType="nt:unstructured"
+                                    offset="0"
+                                    width="12"/>
+                        </cq:responsive_>
+                    </container>
+                </container>
+            </container>
+        </root>
+    </jcr:content>
+    <success/>
+</jcr:root>
